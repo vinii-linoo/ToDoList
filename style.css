@@ -1,0 +1,164 @@
+body {
+    background: #343542;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    width: 220px;
+}
+
+select {
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: Verdana, sans-serif;
+}
+
+input {
+    margin-bottom: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: Verdana, sans-serif;
+}
+
+#btn {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #343542;
+    background: #D5A38D;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    opacity: 0.8;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#box_tarefas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    margin-top: 8px;
+    width: 220px;
+}
+
+#tarefas li {
+    list-style: none;
+    font-weight: bold;
+    background: #f0f0f0;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+#box_lembretes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    padding: 16px;
+    margin-top: 8px;
+    width: 220px;
+}
+
+#lembretes li {
+    list-style: none;
+    font-weight: bold;
+    background: #f0f0f0;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo personalizado para o checkbox */
+#lembretes input[type="checkbox"] {
+    appearance: none; /* Remove o estilo padrão */
+    -webkit-appearance: none; /* Para compatibilidade com navegadores WebKit */
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc; /* Cor da borda */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer;
+    margin-right: 8px;
+    position: relative;
+    transition: all 0.2s ease; /* Animação suave */
+}
+
+#lembretes input[type="checkbox"]:hover {
+    border-color: #4CAF50; /* Cor da borda ao passar o mouse */
+}
+
+#lembretes input[type="checkbox"]::after {
+    content: '✓'; /* Ícone de check */
+    font-size: 12px;
+    color: #4CAF50; /* Cor do ícone */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Inicialmente escondido */
+    transition: all 0.2s ease; /* Animação suave */
+}
+
+#lembretes input[type="checkbox"]:checked::after {
+    transform: translate(-50%, -50%) scale(1); /* Mostra o ícone */
+}
+
+/* Botão para deletar tarefas concluídas */
+#btn-deletar-concluidas {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff4d4d;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#btn-deletar-concluidas:hover {
+    opacity: 0.8;
+}
+
+/* Botão para deletar lembretes selecionados */
+#btn-deletar-lembretes {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff4d4d;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#btn-deletar-lembretes:hover {
+    opacity: 0.8;
+}
